@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;900&display=swap");
+
+:root {
+  --highlight-text-color: #b52184;
+  --text-color: #312d64;
+}
+
+* {
+  font-family: Mulish, "sans-serif";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  background-color: #f9f4fb;
+  font-size: 20px;
+}
+
+.astronaut {
+  width: 79vw;
+  max-width: 719.36px;
+}
+
+header h1 {
+  margin-top: 17px;
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--highlight-text-color);
+}
+
+header p {
+  color: var(--text-color);
+}
+
+.heading {
+  margin-top: 100px;
+}
+
+.arrow-down {
+  width: 58.587px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 95px;
+}
+
+.card-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 52.972px 45px;
+  background: linear-gradient(134deg, #343193 0%, #302c63 100%);
+  gap: 49.662px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 285px;
+  gap: 33.11px;
+  padding: 26.5px;
+  max-width: 384px;
+  border-radius: 19.865px;
+  background: #fff;
+  box-shadow: 0px 3.3107693195343018px 13.243077278137207px 0px
+    rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 19.865px;
+}
+
+.card h3 {
+  font-size: 29.219px;
+  font-weight: 900;
+  color: var(--highlight-text-color);
+}
+
+.card p {
+  color: #312d64;
+  font-size: 16.042px;
+  font-weight: 600;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
+  max-width: 592px;
+}
+
+.contact-form h2 {
+  color: var(--highlight-text-color);
+  font-size: 32px;
+  font-weight: 900;
+  margin: 45px 0;
+}
+
+.contact-form div {
+  position: relative;
+}
+
+.contact-form div img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 10px;
+}
+
+.contact-form input {
+  color: var(--text-color);
+  text-indent: 25px;
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  padding: 12px 16px 12px 14px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 16px;
+  border: 1.5px solid #312d64;
+  margin-bottom: 20px;
+}
+
+.contact-form textarea {
+  color: var(--text-color);
+  min-height: 98px;
+  padding: 12px 16px 16px 16px;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1.5px solid #312d64;
+}
+
+.contact-form button {
+  text-align: center;
+  color: #fff;
+  height: 45px;
+  padding: 0 14px;
+  border-radius: 16px;
+  background: linear-gradient(134deg, #343193 0%, #302c63 100%);
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.contact-form button:hover {
+  cursor: pointer;
+}
+
+.contact {
+  background: none;
+}
+
+footer {
+  margin-top: -20px;
+  text-align: center;
+  color: #fff;
+  padding: 16px;
+  background: linear-gradient(134deg, #343193 0%, #302c63 100%);
+}
+
+footer p {
+  line-height: normal;
+  font-size: 19.381px;
+  font-weight: 600;
+}
+
+@media (min-width: 700px) {
+  .card-area {
+    flex-direction: row;
+  }
+
+  header {
+    flex-direction: row-reverse;
+  }
+
+  header p {
+    font-size: 32px;
+  }
+
+  header h1 {
+    font-size: 58.287px;
+  }
+
+  .arrow-down {
+    margin: 0;
+    margin-top: 179px;
+  }
+
+  .astronaut {
+    margin-bottom: 103.64px;
+  }
+
+  .contact {
+    margin-top: -20px;
+    background: url(assets/contact-form-pattern.png) no-repeat right;
+    background-size: contain;
+  }
+
+  .contact-form {
+    margin-left: 10vw;
+  }
+}
+
+@media (min-width: 2000px) {
+  .contact-form {
+    margin-left: 25vw;
+  }
+}
